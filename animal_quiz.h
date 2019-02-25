@@ -56,10 +56,6 @@ class Knowledge_tree_ref_non_leaf: public Knowledge_tree_ref {
     char* get_animal();
     void set_animal(char* animal);
     char* get_info();
-
-    // void set_buffer(char* buffer_in);
-    // char* get_buffer();
-
     State select_specific_checking_guess_state(); 
     Knowledge_tree_ref_non_leaf(char* discriminating_question,Knowledge_tree_ref* yes_branch, Knowledge_tree_ref* no_branch);
     ~Knowledge_tree_ref_non_leaf();
