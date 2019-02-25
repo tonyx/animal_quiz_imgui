@@ -1,8 +1,11 @@
 
-# How to Build
+# animalquiz "game" imgui graphical interface
 
 this examle modifies https://github.com/ocornut/imgui/tree/master/examples/example_sdl_opengl3
 to play the "animalquiz" game, visualizing the tree.
+
+create a new directory with this project at the same level of that example and it should work.
+
 note: the imgui library uses busy wait cicle, so it loads the cpu.
 
 
