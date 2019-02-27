@@ -180,7 +180,7 @@ int main(int, char**)
         {
             ImGui::Begin("Animal quiz Window", &show_another_window);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
             ImGui::Text("Hello from another window!");
-            ImGui::Text(model->message_from_engine_ref);
+            ImGui::Text(model->get_message_from_engine());
 
             if (answer_for_state_is_binary(model->state)) {
                 if (ImGui::Button("yes")) 
@@ -240,13 +240,11 @@ void show_knowldge_tree_as_imgui_tree(const char* prefix, Knowledge_tree_ref* tr
 
     } else {
         tree->set_buffer((char*)prefix,tree->get_question());
-        // char* to_show = concatenate_strings(2,prefix,tree->get_question());
         if (ImGui::TreeNode(tree->get_buffer())) {
             show_knowldge_tree_as_imgui_tree("yes: ",tree->yes_branch);
             show_knowldge_tree_as_imgui_tree("no: ",tree->no_branch);
             ImGui::TreePop();
         }
-        // free(to_show);
     }
 }
 
