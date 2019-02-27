@@ -31,3 +31,16 @@ c++ `sdl2-config --cflags` -I .. -I ../.. -I ../libs/gl3w main.cpp animal_quiz.c
 brew install sdl2
 c++ `sdl2-config --cflags` -I .. -I ../.. -I ../libs/gl3w main.cpp animal_quiz.cpp myutils.cpp ../imgui_impl_sdl.cpp ../imgui_impl_opengl3.cpp ../../imgui*.cpp ../libs/gl3w/GL/gl3w.c `sdl2-config --libs` -framework OpenGl -framework CoreFoundation
 ```
+
+
+##running just tests: 
+compile (using commands like c++ or g++) the following files: animal_quiz.cpp animal_quiz_test_class.cpp myutils.cpp
+run the executable file produced (a.out in unix-like systems).
+
+##run the animal quiz by command line
+comment the line with #NO_MAIN in the animal_quiz.cpp file,\
+Compile the animal_quiz.cpp and myutils.cpp files.
+
+
+
+
