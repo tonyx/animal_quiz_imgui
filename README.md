@@ -6,7 +6,7 @@ to play the "animalquiz" game, visualizing the tree.
 
 create a new directory with this project at the same level of that example and it should work.
 
-note: the imgui library uses busy wait cicle, so it loads the cpu.
+note: this example works using a busy wait cycle, so it will load the cpu.
 
 
 - On Windows with Visual Studio's CLI
@@ -33,11 +33,11 @@ c++ `sdl2-config --cflags` -I .. -I ../.. -I ../libs/gl3w main.cpp animal_quiz.c
 ```
 
 
-##running just tests: 
+#running just tests: 
 compile (using commands like c++ or g++) the following files: animal_quiz.cpp animal_quiz_test_class.cpp myutils.cpp
 run the executable file produced (a.out in unix-like systems).
 
-##run the animal quiz by command line
+#run the animal quiz by command line
 comment the line with #NO_MAIN in the animal_quiz.cpp file,\
 Compile the animal_quiz.cpp and myutils.cpp files.
 
